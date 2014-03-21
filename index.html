@@ -8,11 +8,14 @@
 		var images = new Array("http://i.imgur.com/xtX6VLn.jpg","http://i.imgur.com/EwQaGf4.jpg","http://i.imgur.com/CDcO4fR.jpg");
 
 		function swapImage() { 
-			document.slide.src = images[i];
-			if(i < images.length - 1) 
+			slide.src = images[i];
+			if(i < images.length - 1) {
 				i++; 
-			else i = 0; 
-				setTimeout("swapImage()",3000);
+			}
+			else {
+				i = 0; 
+			}
+			setTimeout("swapImage()",3000);
 		}
 
 		window.onload = swapImage;
