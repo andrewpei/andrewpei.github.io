@@ -1,3 +1,57 @@
-<link href="style.css" rel="stylesheet">
-<h1>hello</h1>
-<a href="about.html">About</a>
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="style.css"/>
+
+	<script> 
+		var i = 0;
+		var images = new Array("http://i.imgur.com/xtX6VLn.jpg","http://i.imgur.com/EwQaGf4.jpg","http://i.imgur.com/CDcO4fR.jpg");
+
+		function swapImage() { 
+			document.slide.src = images[i];
+			if(i < images.length - 1) 
+				i++; 
+			else i = 0; 
+				setTimeout("swapImage()",3000);
+		}
+
+		window.onload = swapImage;
+	</script> 
+
+</head>
+
+<body>
+	<h1>Meet Andrew Pei</h1>
+
+	<div id="profileImage">
+		<profileImage><img src="http://i.imgur.com/brcKliB.jpg"	height="240" width="322"></profileImage>
+	</div>
+
+	<figure>
+  		<div id="topImage"><img src="http://i.imgur.com/f2OKKB9.jpg" width="300" height="300">
+  		<div id="caption"><figcaption>For the viewing pleasure of...</figcaption></div></div>
+	</figure>
+
+	
+	<h2>a little about me</h2>
+		<p>Hello and welcome to my profile page, my name is Andrew Pei and I grew up here in the Bay Area. I graduated from Dartmouth College in 2011 with a B.E. in Electrical Engineering but decided that the semiconductor industry wasn't right for me. I have always been attracted to the Bay Area startup scene, where a passion for new ideas, vibrant and young culture, and tremendous scale are the norm. So moving in that direction, I pivoted my career and took a job in technical support at Box.com. I got a lot out of my role but I found my passion was still to create things, a quality which is not part of support. Naturally, it made sense to cultivate my software development which is how I found programs such as General Assembly. For a little more on my background check out my <a href="http://www.linkedin.com/pub/andrew-pei/8/a12/31b">LinkedIn profile</a></p>
+		
+	<h2>my fit as a software engineer</h2>
+		<p>The process of creation has always appealed to me both as a journey and an opportunity to express myself. Starting a project, figuring things out, being in that boundary between hopelessly lost and golden intuition. That magical moment when things click and the jubilation you share with your teammates. These are the things I look forward to in my future career as a (software) engineer. All of my background in programming come from I took 6 courses at Dartmouth and the associated projects I used MATLAB for. While I enjoyed those experiences, the strictly taught me to wield code as a tool for computation, a means to an end rather than the end itself. In school I learned that I would enjoy working as an engineer, at Box I learned that the software industry is the right context for that work, now I just need an opportunity to merge these two together.</p>
+
+	<h2>bootcamp and beyond</h2>
+		<p>After programming bootcamp I will to continue my career here in the Bay Area startup scene. I will seek out challenging problems on the most meaningful products I can find in the hopes of making my mark felt. Down the line I aspire to become a product manager where I will be able to better articulate an overall vision and utilize my skills as a facilitator.</p>
+
+	<h2>getting in touch</h2>
+		<li>mobile: (408) 726-4537</li>
+		<li>andrewpei@gmail.com</li>
+
+	<br>
+
+
+	<img name="slide" src="http://i.imgur.com/xtX6VLn.jpg"/>
+	<br>
+  	<caption2>A Few Pictures From my Life</caption2>
+
+</body>
+</html>
